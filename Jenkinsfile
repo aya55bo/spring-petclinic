@@ -32,7 +32,7 @@ pipeline {
         stage('Couverture') {
 
             steps {
-                bat 'mvn cobertura:cobertura'
+                bat 'mvn jacoco:report'
             }
         }
         stage('Documentation') {
