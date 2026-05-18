@@ -38,7 +38,7 @@ pipeline {
         stage('Documentation') {
 
             steps {
-                bat 'mvn site'
+                bat 'mvn javadoc:javadoc'
             }
         }
     }
