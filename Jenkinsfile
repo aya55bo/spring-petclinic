@@ -35,5 +35,11 @@ pipeline {
                 bat 'mvn cobertura:cobertura'
             }
         }
+        stage('Documentation') {
+
+            steps {
+                bat 'mvn site'
+            }
+        }
     }
 }
