@@ -29,5 +29,11 @@ pipeline {
                 }
             }
         }
+        stage('Couverture') {
+
+            steps {
+                bat 'mvn cobertura:cobertura'
+            }
+        }
     }
 }
